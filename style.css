@@ -1,0 +1,86 @@
+/*.flex-container {
+        display: flex;
+    }
+    .flex-container > div{
+        background-color:beige;
+        margin: px;
+        padding: 10px;
+        font-size: 30px;
+    }*/
+
+    *{
+        /* background-color: rgb(221, 221, 221); */
+        margin: 0px;
+        padding: 0px;
+    }
+    .h1{
+        font-size: 1.8rem;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    }
+    .h4{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        text-align: center;
+    }
+    
+    #productbox .box{
+        justify-content: center;
+        border: 1px solid black;
+        margin: 30px 20px 30px 20px;
+       
+    }
+    
+    #productbox .box img{
+        display: block;
+        height: 380px;
+        width:250px;
+        margin: auto;
+        padding:10px 10px;
+    }
+    
+    /* #productbox .box .rentbutton{
+       padding: 5px 5px;
+       justify-content: center;
+        text-align: center;
+        color: rgb(215, 2, 2);
+    } */
+    
+    #productbox .box .rentbutton{
+        padding: 8px 8px;
+        font-size: medium;
+        justify-content: center;
+        margin: 10px 120px 10px 120px;
+    }
+    
+    #productbox .box .desc{
+        text-align: center;
+        padding: 10px 10px;
+        color: black;
+    }
+    
+    #productbox{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0px 20px 0px 20px;
+    }
+    .checkbut{
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin: 5px 10px 60px 682px;
+        font-size: 50px;
+    }
+
+    .rentbutton:hover{
+       
+        transform: scale(1.2);
+    }
+
+    .checkbut:hover{
+        transform: scale(1.2);
+    }
+    rentbutton{
+        padding: 10px;
+    }
