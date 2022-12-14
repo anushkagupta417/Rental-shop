@@ -6,29 +6,33 @@
     <link rel="stylesheet" href="loginstyle.css">
 </head>
 
-<body>
-
-    
+<body>   
     <h1 class="h-main">Own Your Style</h1>
         <br><br>
     <div class="loginpg">
     <form>
-            <h3 class="a">Username</h3>
-            <input type="text" name="username" id="username" placeholder="Username"><br><br>
+            <h3 class="a">Email</h3>
+            <input type="text" name="email" id="email" placeholder="Email"><br><br>
             <h3 class="a">Password</h3>
             <input type="password" name="pwd" id="pwd" placeholder="Password"><br><br>
-            <input type="button" value="Login" onclick="openMain()" id="loginbutton">
+            <button class="loginbutton" name="loginbutton" id="loginbutton">Login</button>
             <br>
             <br>
     <h3 class="registerbut"><a href="register.html">New User? Create Account.</a></h3>
     </form>
     </div>
-    <script>
+    <script src=
+"https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+    </script>
+
+    <script src="firebase2.js"></script>
+
+    <!-- <script>
         function openMain() {
             //database check
             window.open("main.html");
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
