@@ -23,6 +23,9 @@ price=0;
                 r1=1;
                  document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Summer Skirt Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -38,7 +41,9 @@ price=0;
                 r2=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
-                
+                const li=document.createElement('li');
+                li.innerHTML="Beige Blazer Outfit";
+                document.querySelector("#cart").append(li);
             }
             else{
                 alert('Item already rented.')
@@ -53,6 +58,9 @@ price=0;
                 r3=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Co-ord Suit Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -68,6 +76,9 @@ price=0;
                 r4=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Winter Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -83,6 +94,9 @@ price=0;
                 r5=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Mustard dress";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -98,7 +112,9 @@ price=0;
                 r6=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
-                
+                const li=document.createElement('li');
+                li.innerHTML="Indian Bridal Outfit";
+                document.querySelector("#cart").append(li);
             }
             else{
                 alert('Item already rented.')
@@ -113,6 +129,9 @@ price=0;
                 r7=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Mocha Formal Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -128,6 +147,9 @@ price=0;
                 r8=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Modern Lehenga Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -143,6 +165,9 @@ price=0;
                 r9=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Boho Dress";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -158,7 +183,9 @@ price=0;
                 r10=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
-                
+                const li=document.createElement('li');
+                li.innerHTML="Embroidered Lehenga Set";
+                document.querySelector("#cart").append(li);
             }
             else{
                 alert('Item already rented.')
@@ -173,6 +200,9 @@ price=0;
                 r11=1;
                 document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Bold Printed Salwar suit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
@@ -188,6 +218,9 @@ price=0;
                 r12=1;
                  document.getElementById("dislist").innerHTML=price;
                 document.getElementById("disquant").innerHTML=quant;
+                const li=document.createElement('li');
+                li.innerHTML="Baby Blue Formal Outfit";
+                document.querySelector("#cart").append(li);
                 
             }
             else{
