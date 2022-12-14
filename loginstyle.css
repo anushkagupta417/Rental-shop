@@ -7,10 +7,11 @@
     background: linear-gradient(120deg,#f8f1f1, #f0bbc9);
 } */
 body {
-    background-image: url("login_bg3.jpg");
+    background-image: url("login_bg2.jpg");
     background-color: #cccccc;
-    background-size: 100%;
+    background-size: cover;
    }
+
 .loginpg{
    
      display: flex;
@@ -30,11 +31,11 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color:white;
     margin: 30px 10px 10px 10px;
 }
 
-#username{
+#email{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 20px;
     width: 300px;
