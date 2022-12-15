@@ -5,14 +5,14 @@ body {
    }
 .regpg{
    
-    display: flex;
+    /* display: flex; */
     margin: 0px 550px 0px 550px;
     border: 1px solid black;
     text-align: center;
     align-items: center;
     justify-content: center;
     background:silver;
-    padding: 30px;
+    padding: 20px 10px 20px 10px;
    
 }
 *{
@@ -90,4 +90,7 @@ body {
         margin: 30px 10px 10px 10px;
         color: white;
     }
-    
+    #pwd_conditions{
+        font-size: small;
+        color:blueviolet;
+    }
