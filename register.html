@@ -10,24 +10,29 @@
     <div class="regpg">
         
     <form id="register">
-            <!-- Name<br>
+            Name<br>
             <input type="text" name="namee" id="namee" placeholder="Name"><br>
             Contact Number<br>
-            <input type="text" name="phno" id="phno" placeholder="Contact Number"><br> -->
+            <input type="text" name="phno" id="phno" placeholder="Contact Number"><br>
             Email<br>
             <input type="text" name="email" id="email" placeholder="Email"><br>
             Password<br>
             <input type="password" name="pwd" id="pwd" placeholder="Password"><br>
             Confirm Password<br>
             <input type="password" name="pwd2" id="pwd2" placeholder="Re-Enter Password"><br><br>
+            <p id="pwd_conditions">Password length must be between 8 and 16 characters and must contain atleast 1 digit.</p><br>
             <!-- <input type="button" value="Create Account" onclick="create_acc()" id="btn"> <br> -->
-            <button class="btn" name="btn" id="btn" type="submit">Create Account</button>
+            
+            
     </form>
+    <div>
+    <button class="btn" name="btn" id="btn" type="submit" onclick="register()">Create Account</button>
+</div>
     <script src=
 "https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
     </script>
 
-    <script src="firebase1.js">
+    <script src="demo.js">
     </script>
 </div>
 </body>
