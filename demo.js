@@ -16,13 +16,12 @@ const firebaseConfig = {
 
    function register () {
     // Get all our input fields
-    var Name = document.getElementById('namee').value;
-    var phno = document.getElementById('phno').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('pwd').value;
-    var password2 = document.getElementById('pwd2').value;
+    Name = document.getElementById('namee').value;
+    phno = document.getElementById('phno').value;
+    email = document.getElementById('email').value;
+    password = document.getElementById('pwd').value;
+    password2 = document.getElementById('pwd2').value;
 
-// form validation
     if (validate_field(Name) == false || validate_field(phno) == false || validate_field(email) == false || validate_field(pwd) == false || validate_field(pwd2) == false) {
         alert('One or More fields empty');
         return
@@ -30,17 +29,17 @@ const firebaseConfig = {
     if (validate_password(password)== false)
     {
         alert('Incorrect password format');
-        return
     }
     if ( confirm_password(password,password2) == false) {
         alert('Confirmation password does not match with password.');
         return 
+        // Don't continue running the code
       }
     if( validate_phno(phno)==false)
-    {
-        alert('Incorrect phno')
-        return
-    }
+      {
+          alert('Incorrect phno')
+          return
+      }
     
     // Move on with Auth
   auth.createUserWithEmailAndPassword(email, password)
@@ -49,32 +48,25 @@ const firebaseConfig = {
     var user = auth.currentUser
 
     // Add this user to Firebase Database
-    // var database_ref = firebase.database().ref() 
-    var messagesRef = firebase.database()
-    .ref('Customer Data');
-    document.getElementById("register").addEventListener("submit",create_acc)
+    // var database_ref = firebase.database().ref()
 
-function create_acc(e){
-    e.preventDefault();
-    alert("Account Created!");
-    if(window.confirm){
-        window.open("login.html");
+    // Create User data
+    var user_data = {
+      email : email, 
+      Name : Name,
+      Phone_no : phno,
+      last_login : Date.now()
     }
-    console.log(Name,phno,email);
-    saveData(Name,phno,email);
-    document.getElementById('register').reset();
-    
-}
-function saveData(Name,phno,email){
-var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: Name,
-        phone_no: phno,
-        email: email,
-    });
-}
- })
- //catch
+
+    // Push to Firebase Database
+    firebase.database().ref('users/' + user.uid).set(user_data);
+
+    // DOne
+    alert('User Created!!')
+    if(window.confirm){
+        window.location="login.html";
+     }
+  })
   .catch(function(error) {
     // Firebase will use this to alert of its errors
     var error_code = error.code
@@ -82,33 +74,34 @@ var newMessageRef = messagesRef.push();
 
     alert(error_message)
   });
-}//end register
+}
 
+// Set up our login function
 function login () {
   // Get all our input fields
-  email = document.getElementById('email').value
-  password = document.getElementById('pwd_login').value
-  
-  if (validate_field(email) == false || validate_field(pwd) == false) {
+  email1 = document.getElementById('email_login').value;
+  password1 = document.getElementById('pwd_login').value;
+//   document.getElementById('r').innerHTML=email;
+  if (validate_field(email1) == false || validate_field(password1) == false) {
     alert('One or More fields empty');
     return
   }
 
-  if (validate_password(password)== false)
+  if (validate_password(password1)== false)
     {
         alert('Incorrect password format');
         return;
     }
 
-    auth.signInWithEmailAndPassword(email, password)
+    auth.signInWithEmailAndPassword(email1, password1)
   .then(function() {
-    // Declare user variable
+    //Declare user variable
     var user = auth.currentUser
 
-    // Add this user to Firebase Database
-    // var database_ref = database.ref()
+    //Add this user to Firebase Database
+    var database_ref = database.ref()
 
-    // Create User data
+    //Create User data
     var user_data = {
       last_login : Date.now()
     }
@@ -116,24 +109,29 @@ function login () {
     // Push to Firebase Database
     firebase.database().ref('users/' + user.uid).update(user_data)
 
-    // DOne
     alert('User Logged In!!')
     if(window.confirm){
-        window.open("main.html");
-     }
+        window.location="main.html";
+    }
+})
 
-  })
-  .catch(function(error) {
-    // Firebase will use this to alert of its errors
-    var error_code = error.code
-    var error_message = error.message
+    // DOne
+    .catch(function(error) {
+        // Firebase will use this to alert of its errors
+        var error_code = error.code
+        var error_message = error.message
+    
+        alert(error_message)
+      });
+    }
+    
 
-    alert(error_message)
-  })
-}
 
-//VALIDATE FUNCTIONS
-    function validate_password(password)
+
+  
+
+
+      function validate_password(password)
       {
         digflag=0;
         for(i=0;i<password.trim().length;i++){
@@ -149,7 +147,8 @@ function login () {
             return false;
         }
         else return true;
-    }
+      }
+    
 
       function confirm_password(password,pwd2)
       {
@@ -170,42 +169,14 @@ function login () {
           return true
         }
       }
-       function validate_phno(phno)
+
+      function validate_phno(phno)
        {
            if(phno.length==10)
            return true
            else
            return false
        }
-        var messagesRef = firebase.database()
-              .ref('Customer Data');
-  
-    document.getElementById("register").addEventListener("submit",create_acc)
-  
-//    function create_acc(e)
-//           {
-//               e.preventDefault();
-//               alert("Account Created!");
-//               if(window.confirm){
-//                   window.open("login.html");
-//               }
-//               var name=document.getElementById('namee').value;
-//               var phno=document.getElementById('phno').value;
-//               var username=document.getElementById('username').value;
-//               var pwd=document.getElementById('pwd').value;
-//               console.log(name,phno,username,pwd);
-//               saveData(name, phno, username, pwd);
-//               document.getElementById('register').reset();
-              
-//           }
-  
-  function saveData(name,phno,username,pwd)
-  {
-      var newMessageRef = messagesRef.push();
-              newMessageRef.set({
-                  name: name,
-                  phone_no: phno,
-                  username: username,
-                  password: pwd,
-              });
-  }
+    
+
+      
