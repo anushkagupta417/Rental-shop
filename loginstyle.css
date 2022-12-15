@@ -14,14 +14,14 @@ body {
 
 .loginpg{
    
-     display: flex;
+     /* display: flex; */
      margin: 0px 550px 0px 550px;
      border: 1px solid black;
      text-align: center;
      align-items: center;
      justify-content: center;
      background:silver;
-     padding: 30px;
+     padding: 10px 10px 10px 10px; 
     
 }
 
@@ -35,7 +35,7 @@ body {
     margin: 30px 10px 10px 10px;
 }
 
-#email{
+#email_login{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 20px;
     width: 300px;
@@ -44,7 +44,7 @@ body {
     background: white;
 }
 
-#pwd{
+#pwd_login{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 20px;
     width: 300px;
