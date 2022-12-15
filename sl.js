@@ -13,10 +13,11 @@ price=0;
         r11=0;
         r12=0;
         price=0;
-        item_price=2000;
+        
         function rent1()
         {
             if (r1==0){
+                item_price=500;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -35,6 +36,7 @@ price=0;
         function rent2()
         {
             if (r2==0){
+                item_price=800;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -52,6 +54,7 @@ price=0;
         function rent3()
         {
             if (r3==0){
+                    item_price=800;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -70,6 +73,7 @@ price=0;
         function rent4()
         {
             if (r4==0){
+                    item_price=900;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -88,6 +92,7 @@ price=0;
         function rent5()
         {
             if (r5==0){
+                    item_price=600;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -106,6 +111,7 @@ price=0;
         function rent6()
         {
             if (r6==0){
+                    item_price=1200;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -123,6 +129,7 @@ price=0;
         function rent7()
         {
             if (r7==0){
+                    item_price=750;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -141,6 +148,7 @@ price=0;
         function rent8()
         {
             if (r8==0){
+                    item_price=1000;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -159,6 +167,7 @@ price=0;
         function rent9()
         {
             if (r9==0){
+                    item_price=400;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -177,6 +186,7 @@ price=0;
         function rent10()
         {
             if (r10==0){
+                    item_price=1000;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -194,6 +204,7 @@ price=0;
         function rent11()
         {
             if (r11==0){
+                    item_price=900;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
@@ -212,6 +223,7 @@ price=0;
         function rent12()
         {
             if (r12==0){
+                    item_price=700;
                 price+=item_price;
                 alert('Added to cart');
                 quant+=1;
