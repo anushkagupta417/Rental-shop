@@ -31,5 +31,8 @@ To access the website's features, you must log in using your credentials. Users 
 ## UI Design
 
 The website features a user-friendly and visually appealing UI designed to enhance the user experience. The design is intuitive and responsive, ensuring a seamless browsing and shopping experience.
+![Uploading Screenshot 2022-12-15 at 7.48.52 PM.png…]()
+![Uploading Screenshot 2022-12-15 at 7.49.48 PM.png…]()
+
 
 ---
